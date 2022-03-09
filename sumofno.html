@@ -1,0 +1,31 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<html>
+<body>
+    <div class ="conatainer-fluid"> 
+    <input type= "text" name= "number1" id= "number1"> <br>
+    <input type= "text" name= "n2" id = "n2"> <br>
+    <button type = "button" onclick= "submit1()">Submit</button> <br>
+    <p id= "result"> </p>
+    </div>
+    
+    <script>
+
+    function submit1(){
+        var a= document.getElementById("number1").value;
+        var b= document.getElementById("n2").value;
+        var c=parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML= "sum of number is:" + c;
+        
+    }
+    
+    </script>
+</body>
+</html>
